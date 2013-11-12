@@ -35,6 +35,9 @@
 // Replicant
 #include "daemon/replicant_state_machine.h"
 #include "daemon/replicant_state_machine_context.h"
+#if defined __APPLE__
+#include "daemon/memstream.h"
+#endif
 
 #define COND_STR2NUM(STR, NUM) \
     do \
